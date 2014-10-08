@@ -1,7 +1,7 @@
 ﻿"use strict";
 
 // Executed as soon as the page loads
-$(function() {
+$(document).ready(function () {
 
     // Cache the fields for name and location
     var $evangelists = $('#evangelists');
@@ -16,7 +16,7 @@ $(function() {
     // Get latest JSON data from server 
     $.ajax({
         type: 'GET',
-        url: 'data/evangelists.json',
+        url: 'assets/data/evangelists.json',
 
         // Draw every evangelist in our json file to the screen
         success: function (data) {
